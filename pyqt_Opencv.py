@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'pyqt_Opencv.ui'
 #
-# Created by: PyQt5 UI code generator 5.9
+# Created by: PyQt5 UI code generator 5.5.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -18,7 +18,7 @@ class Ui_Qt_CV_MainWindow(object):
         self.centralwidget = QtWidgets.QWidget(Qt_CV_MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.note_browser = QtWidgets.QTextBrowser(self.centralwidget)
-        self.note_browser.setGeometry(QtCore.QRect(510, 250, 411, 31))
+        self.note_browser.setGeometry(QtCore.QRect(510, 170, 411, 111))
         self.note_browser.setLineWrapMode(QtWidgets.QTextEdit.NoWrap)
         self.note_browser.setObjectName("note_browser")
         self.cam_View1 = QtWidgets.QLabel(self.centralwidget)
@@ -36,7 +36,7 @@ class Ui_Qt_CV_MainWindow(object):
         self.cam_View2.setFrameShape(QtWidgets.QFrame.Box)
         self.cam_View2.setObjectName("cam_View2")
         self.scoreLcd1 = QtWidgets.QLCDNumber(self.centralwidget)
-        self.scoreLcd1.setGeometry(QtCore.QRect(520, 160, 111, 81))
+        self.scoreLcd1.setGeometry(QtCore.QRect(520, 80, 111, 81))
         self.scoreLcd1.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.scoreLcd1.setFrameShadow(QtWidgets.QFrame.Raised)
         self.scoreLcd1.setSmallDecimalPoint(False)
@@ -45,7 +45,7 @@ class Ui_Qt_CV_MainWindow(object):
         self.scoreLcd1.setProperty("value", 0.0)
         self.scoreLcd1.setObjectName("scoreLcd1")
         self.scoreLcd2 = QtWidgets.QLCDNumber(self.centralwidget)
-        self.scoreLcd2.setGeometry(QtCore.QRect(800, 160, 111, 81))
+        self.scoreLcd2.setGeometry(QtCore.QRect(800, 80, 111, 81))
         self.scoreLcd2.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.scoreLcd2.setSmallDecimalPoint(False)
         self.scoreLcd2.setDigitCount(2)
@@ -53,7 +53,7 @@ class Ui_Qt_CV_MainWindow(object):
         self.scoreLcd2.setProperty("value", 0.0)
         self.scoreLcd2.setObjectName("scoreLcd2")
         self.twentyfourLcd = QtWidgets.QLCDNumber(self.centralwidget)
-        self.twentyfourLcd.setGeometry(QtCore.QRect(670, 160, 91, 51))
+        self.twentyfourLcd.setGeometry(QtCore.QRect(670, 80, 91, 51))
         self.twentyfourLcd.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.twentyfourLcd.setSmallDecimalPoint(False)
         self.twentyfourLcd.setDigitCount(2)
@@ -61,6 +61,10 @@ class Ui_Qt_CV_MainWindow(object):
         self.twentyfourLcd.setProperty("value", 24.0)
         self.twentyfourLcd.setProperty("intValue", 24)
         self.twentyfourLcd.setObjectName("twentyfourLcd")
+        self.time_browser = QtWidgets.QTextBrowser(self.centralwidget)
+        self.time_browser.setGeometry(QtCore.QRect(510, 10, 411, 61))
+        self.time_browser.setLineWrapMode(QtWidgets.QTextEdit.NoWrap)
+        self.time_browser.setObjectName("time_browser")
         Qt_CV_MainWindow.setCentralWidget(self.centralwidget)
         self.actionQuit = QtWidgets.QAction(Qt_CV_MainWindow)
         self.actionQuit.setObjectName("actionQuit")

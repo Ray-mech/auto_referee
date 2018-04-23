@@ -23,10 +23,10 @@ class DesignerMainWindow(QtWidgets.QMainWindow,Ui_Qt_CV_MainWindow):
         
         """初期実行メソッド"""
         self.logging("System started")
-        videopath = './videofile.mp4'
+        videopath = 0 #'./videofile.mp4'
         self.cap = cv2.VideoCapture(videopath)
-        #self.cap.set(3,1280)
-        #self.cap.set(4,416)
+        self.cap.set(3,1280)
+        self.cap.set(4,416)
         self.startLoop()
         """------------"""
         
@@ -38,7 +38,7 @@ class DesignerMainWindow(QtWidgets.QMainWindow,Ui_Qt_CV_MainWindow):
         self.note_browser.setPlainText(self.log)
 
     def startLoop(self):
-        fps = 60
+        fps = 30
         self.timer=QtCore.QTimer()
         self.timer.timeout.connect(self.captureVideo)
         self.timer.start(1000/fps)
